@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <!-- Page Title -->
+        <title>Dokan HTML-5 HTML Template</title>
+        <!--Fevicon-->
+        <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon"/>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- Font-Awesome CSS-->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <!--Owl-Carousel CSS-->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <!--Nice Selecet CSS-->
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <!-- Main Style CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+
+    <body>
+
+        <div class="rox-dk-wrapper">
+            <!--SideBar Area Start-->
+            <div class="sidebar-area">
+                <div class="sidebar-logo">
+                    <a href="index.html"><img src="assets/images/logo/logo" alt=""></a>
+                </div>
+                <div class="sidebar-menu">
+                    <ul>
+                        <li class="active"><a href="index.html"><i class="fa fa-tachometer" aria-hidden="true"></i><span>Dashboard</span></a></li>
+                        <li><a data-toggle="collapse" href="#product-all" role="button" aria-expanded="false" aria-controls="product-all"><i class="fa fa-archive" aria-hidden="true"></i><span>Products</span> <span class="btn-right"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a></li>
+                        <div class="collapse multi-collapse" id="product-all">
+                                <li><a href="product.html"><span>All Product</span> <i class="btn-right fa fa-check" aria-hidden="true"></i></a></li>
+                                <li><a href="edit-product.html"><span>Edit Product</span> <i class="btn-right fa fa-pencil"></i></a></li>
+                          </div>
+                        <li><a href="coupon.html"><i class="fa fa-ticket" aria-hidden="true"></i><span>Coupons</span></a></li>
+                        <li><a href="report.html"><i class="fa fa-bar-chart" aria-hidden="true"></i><span>Reports</span></a></li>
+                        <li><a href="review.html"><i class="fa fa-star-o" aria-hidden="true"></i><span>Reviews</span></a></li>
+                        <li><a href="#"><i class="fa fa-money" aria-hidden="true"></i><span>Withdraw</span></a></li>
+                        <li><a href="store-setting.html"><i class="fa fa-cogs" aria-hidden="true"></i><span>Settings</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--SideBar Area End-->
+
+            <!--Header Area Start-->
+            <div class="header-area">
+                <div class="page-title">
+                    <h2>Edit</h2>
+                </div>
+                <div class="header-right-content">
+                    <ul>
+                        <li>
+                            <div class="btn-group">
+                                <button
+                                    type="button"
+                                    class="btn dropdown-toggle toggle-icon-none"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="fa fa-clipboard"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="btn-group">
+                                <button
+                                    type="button"
+                                    class="btn dropdown-toggle toggle-icon-none"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="fa fa-bell"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="profile-area">
+                                <!-- Profile Area button -->
+                                <div class="btn-group">
+                                    <button
+                                        type="button"
+                                        class="btn dropdown-toggle"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false">
+                                        <img src="assets/images/profile-image/profile-img.png" alt="">
+                                        My Profile
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Edit Profile</a>
+                                        <a class="dropdown-item" href="#">Activitied</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Sign Out</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--  Main Content Start-->
+            <div class="main-content">
+                <div class="container-fluid">
+                    <form action="#">
+                    <div class="product-main-information">
+                        <div class="dokan-store-title">
+                            <h3>Main Information</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="main-information">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <label for="product-name">Product Name</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="product-name"
+                                                    aria-describedby="emailHelp"
+                                                    placeholder="Please enter your product name.(40 char. max)">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group custom-tag-add">
+                                                <label for="exist-values">
+                                                    <p>Tag</p>
+                                                    <input
+                                                        type="text"
+                                                        id="exist-values"
+                                                        class="tagged form-control"
+                                                        data-removeBtn="true"
+                                                        name="tag-2"
+                                                        value="PC"
+                                                        placeholder="Add Platform">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="main-product-catagory">
+                                                <label for="">Catagory</label>
+                                                <select>
+                                                    <option data-display="Home Decoration">Home Decoration</option>
+                                                    <option value="1">Some option</option>
+                                                    <option value="2">Another option</option>
+                                                    <option value="3" disabled>A disabled option</option>
+                                                    <option value="4">Potato</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="main-product-catagory">
+                                                <label for="#">Product Type</label>
+                                                <select>
+                                                    <option data-display="Sample">Sample</option>
+                                                    <option value="1">Some option</option>
+                                                    <option value="2">Another option</option>
+                                                    <option value="3" disabled>A disabled option</option>
+                                                    <option value="4">Potato</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="input-group">
+                                                <label>Price</label>
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="product-price">$</span>
+                                                </div>
+                                                <input
+                                                    type="number"
+                                                    class="form-control"
+                                                    placeholder="3245"
+                                                    aria-label="Price"
+                                                    aria-describedby="product-price">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="input-group">
+                                                <label>Discounted Price Schedule</label>
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="product-price">$</span>
+                                                </div>
+                                                <input
+                                                    type="number"
+                                                    class="form-control"
+                                                    placeholder="1313"
+                                                    aria-label="Price"
+                                                    aria-describedby="product-price">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <label for="product-des">Short Description</label>
+                                                <textarea
+                                                    class="form-control"
+                                                    id="product-des"
+                                                    rows="3"
+                                                    placeholder="Enter some short description about your product "></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <label for="product-des">Product Description</label>
+                                                <textarea
+                                                    class="form-control"
+                                                    id="product-des"
+                                                    rows="3"
+                                                    placeholder="Enter some short description about your product "></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="add-image">
+                                    <div class="form-group">
+                                        <label for="file">Add Image</label>
+                                        <input
+                                            type="file"
+                                            class="form-control-file"
+                                            id="file"
+                                            aria-describedby="fileHelp">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="inventory-area">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="accordion" id="inventory">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0">
+                                                <button
+                                                    class="btn btn-link"
+                                                    type="button"
+                                                    data-toggle="collapse"
+                                                    data-target="#collapseOne"
+                                                    aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    Inventory
+                                                    <span>
+                                                        <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                                    </span>
+                                                </button>
+                                            </h5>
+                                        </div>
+
+                                        <div
+                                            id="collapseOne"
+                                            class="collapse show"
+                                            aria-labelledby="headingOne"
+                                            data-parent="#inventory">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="accept-checked">
+                                                            <input type="checkbox">
+                                                            <p>This product requires shipping</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="product-name">Weight</label>
+                                                            <input
+                                                                type="text"
+                                                                class="form-control"
+                                                                id="product-name"
+                                                                aria-describedby="emailHelp"
+                                                                placeholder="KG">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="product-name">Length</label>
+                                                            <input
+                                                                type="text"
+                                                                class="form-control"
+                                                                id="product-name"
+                                                                aria-describedby="emailHelp"
+                                                                placeholder="cm">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="product-name">Width</label>
+                                                            <input
+                                                                type="text"
+                                                                class="form-control"
+                                                                id="product-name"
+                                                                aria-describedby="emailHelp"
+                                                                placeholder="cm">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="product-name">Height</label>
+                                                            <input
+                                                                type="text"
+                                                                class="form-control"
+                                                                id="product-name"
+                                                                aria-describedby="emailHelp"
+                                                                placeholder="cm">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label for="product-name">Shipping Class</label>
+                                                            <select>
+                                                                <option data-display="Sample">Sample</option>
+                                                                <option value="1">Some option</option>
+                                                                <option value="2">Another option</option>
+                                                                <option value="3" disabled>A disabled option</option>
+                                                                <option value="4">Potato</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <p class="shipping-same-text">Shipping classes are used by certain shipping methods to group similar products.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inventory-area">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="accordion" id="inventory">
+                                    <div class="card">
+                                        <div class="card-header" id="headingtwo">
+                                            <h5 class="mb-0">
+                                                <button
+                                                    class="btn btn-link"
+                                                    type="button"
+                                                    data-toggle="collapse"
+                                                    data-target="#linking"
+                                                    aria-expanded="true"
+                                                    aria-controls="linking">
+                                                    Shipping and Tax
+                                                    <span>
+                                                        <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                                    </span>
+                                                </button>
+                                            </h5>
+                                        </div>
+
+                                        <div
+                                            id="linking"
+                                            class="collapse show"
+                                            aria-labelledby="headingtwo"
+                                            data-parent="#inventory">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="accept-checked">
+                                                            <input type="checkbox">
+                                                            <p>This product requires shipping</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="product-name">Weight</label>
+                                                            <input
+                                                                type="text"
+                                                                class="form-control"
+                                                                id="product-name"
+                                                                aria-describedby="emailHelp"
+                                                                placeholder="KG">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="product-name">Length</label>
+                                                            <input
+                                                                type="text"
+                                                                class="form-control"
+                                                                id="product-name"
+                                                                aria-describedby="emailHelp"
+                                                                placeholder="cm">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="product-name">Width</label>
+                                                            <input
+                                                                type="text"
+                                                                class="form-control"
+                                                                id="product-name"
+                                                                aria-describedby="emailHelp"
+                                                                placeholder="cm">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="product-name">Height</label>
+                                                            <input
+                                                                type="text"
+                                                                class="form-control"
+                                                                id="product-name"
+                                                                aria-describedby="emailHelp"
+                                                                placeholder="cm">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label for="product-name">Shipping Class</label>
+                                                            <select>
+                                                                <option data-display="Sample">Sample</option>
+                                                                <option value="1">Some option</option>
+                                                                <option value="2">Another option</option>
+                                                                <option value="3" disabled>A disabled option</option>
+                                                                <option value="4">Potato</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <p class="shipping-same-text">Shipping classes are used by certain shipping methods to group similar products.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inventory-area">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="accordion" id="inventory">
+                                    <div class="card">
+                                        <div class="card-header" id="headingthree">
+                                            <h5 class="mb-0">
+                                                <button
+                                                    class="btn btn-link"
+                                                    type="button"
+                                                    data-toggle="collapse"
+                                                    data-target="#other-option"
+                                                    aria-expanded="true"
+                                                    aria-controls="other-option">
+                                                    Linked Products
+                                                    <span>
+                                                        <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                                    </span>
+                                                </button>
+                                            </h5>
+                                        </div>
+
+                                        <div
+                                            id="other-option"
+                                            class="collapse show"
+                                            aria-labelledby="headingthree"
+                                            data-parent="#inventory">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label for="product-name">Upsells</label>
+                                                            <input
+                                                                type="text"
+                                                                class="form-control"
+                                                                id="product-name"
+                                                                aria-describedby="emailHelp"
+                                                                placeholder="Search for a product">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label for="product-name">Cross-sells</label>
+                                                            <input
+                                                                type="text"
+                                                                class="form-control"
+                                                                id="product-name"
+                                                                aria-describedby="emailHelp"
+                                                                placeholder="Search for a product">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="form-group">
+                                                            <label for="product-des">Product Description</label>
+                                                            <textarea
+                                                                class="form-control"
+                                                                id="product-des"
+                                                                rows="3"
+                                                                placeholder="Enter some short description about your product "></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="form-action-area">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                    <div class="accept-checked">
+                                            <input type="checkbox">
+                                            <p>This product requires shipping</p>
+                                        </div>
+                            </div>
+                            <div class="col-lg-5">
+                                    <div class="update-settings-btn">
+                                            <a href="#">Save Product</a>
+                                        </div>
+                            </div>
+                        </div>
+                   </div>
+                </form>
+                </div>
+            </div>
+            <!--  Main Content End-->
+        </div>
+
+        <!--Main js-->
+        <script src="assets/js/jquery-1.12.4.min.js"></script>
+        <!--Modernizer js-->
+        <script src="assets/js/modernizr-3.5.0.min.js"></script>
+        <!--Bootstrap popper js-->
+        <script src="assets/js/popper.min.js"></script>
+        <!--Bootstrap js-->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!--Owl-Carousel JS-->
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <!--Parallax JS-->
+        <script src="assets/js/jquery.parallax-1.1.3.js"></script>
+        <!--For Custom Tag JS-->
+        <script src="assets/js/custom-tag.js"></script>
+        <!--Nice Select JS-->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!--Custom js-->
+        <script src="assets/js/main.js"></script>
+    </body>
+
+</html>

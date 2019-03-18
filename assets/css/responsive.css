@@ -1,0 +1,172 @@
+/* ===================================================
+    Author       : Cloud Software Solution
+    Template Name: Ecommerce - HTML Template
+    Tags: Ecommerce, Admin HTML-5 Templete, Multipurpose,HTML Ecommerce, Admin HTML-5 Templete 
+    Version      : 1.0.0
+======================================================*/
+
+/* Responsive Code */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 15px 0;
+    }
+    .sidebar-menu > ul > li > a > span {
+        display: none;
+    }
+    .sidebar-menu > ul > li > a {
+        text-align: center;
+    }
+    .sidebar-logo {
+        padding: 19px 7px 7px;
+        height: 57px;
+    }
+    div#product-all {
+        padding-left: 0;
+    }
+    div#product-all span {
+        display: none;
+    }
+    .single-earning-area-wrapper {
+        margin-bottom: 10px;
+    }
+    .header-area {
+        padding: 0 10px;
+    }
+    .page-title h2 {
+        font-size: 16px;
+        line-height: 1.3;
+        margin-top: 20px;
+    }
+    .header-right-content .btn {
+        padding: 0.375rem 0;
+    }
+    .profile-area button {
+        font-size: 13px;
+    }
+    .dashboard-title-style {
+        padding: 10px 15px;
+    }
+    .dashboard-title-style h4 {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .single-earning-area h2 {
+        font-size: 25px;
+    }
+    .single-earning-area {
+        padding: 20px;
+    }
+    .single-dashboard-table-content li a {
+        padding: 10px 15px;
+    }
+    .single-dashboard-item {
+        margin-bottom: 10px;
+    }
+    .update-settings-btn.title-btn-style {
+        display: none;
+    }
+    .filter-menu-area li {
+        margin-right: 0;
+    }
+    .product-search-area input[type=search] {
+        display: none;
+    }
+    .inventory-area {
+        margin-top: 10px;
+
+    }
+    .dokan-store-nav li a {
+        padding: 10px 5px;
+        -webkit-font-smoothing: antialiased;
+    }
+    .sales-report {
+        margin-bottom: 10px;
+    }
+    .dokan-custom-fild-partition:after {
+        border-right: none;
+    }
+    .dokan-stor-profile {
+        margin-bottom: 20px;
+    }
+    .dokan-stor-settings .dokan-stor-settings-content {
+        margin-bottom: 10px;
+    }
+    .dokan-store-nav ul {
+        padding-left: 0;
+    }
+    .shipping-switch-btn {
+        text-align: left;
+        margin-bottom: 18px;
+    }
+    .update-btn {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    .transfar-txt {
+        margin-bottom: 15px;
+    }
+    .for-date-filter {
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    .col-lg-1.text-center.col-sm-left {
+        text-align: left !important;
+    }
+    .shipping-divider {
+        display: none;
+    }
+    .single-product-item-common-style-class p {
+        overflow: hidden;
+    }
+    .product-filter-area {
+        padding: 0;
+    }
+    .shipping-area-button .transparent-btn {
+        margin: 5px 0;
+    }
+    
+}
+/*=========================
+     For Scroll Table
+    ========================= */
+@media (max-width: 992px) {
+    .single-product-item-common-style-class:before {
+        content: attr(data-col_name);
+        position: relative;
+        display: block;
+        float: left;
+        width: 50%;
+    }
+    .product-list {
+        padding: 0;
+        border-bottom: 0;
+    }
+    .product-list .row {
+        display: none;
+    }
+    div#product-all {
+        padding-left: 0;
+    }
+    .product-img {
+        display: none;
+    }
+}
+@media (max-width: 1024px) {
+    div#product-all li i {
+        font-size: 14px;
+    }
+    div#product-all li a {
+        font-size: 12px;
+    }
+    .product-search-area {
+        overflow: hidden;
+    }
+
+    .product-search-area button {
+        display: none;
+    }
+    .coupon-code-text h3 {
+        font-size: 12px;
+    }
+
+}
